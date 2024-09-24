@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Preeti's Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="styles/style.css">
+  <style>
+    /* Custom Animation Styles */
+    .fade-in {
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeIn 1s forwards;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .scale-transition {
+      transition: transform 0.3s ease, opacity 0.3s ease;
+    }
+
+    .scale-transition:hover {
+      transform: scale(1.05);
+      opacity: 0.9;
+    }
+  </style>
+</head>
+<body class="bg-black text-pink-200 font-sans">
+
+  <!-- Navbar -->
+  <header class="bg-black text-pink-400 shadow-md">
+    <nav class="container mx-auto p-4 flex justify-between items-center">
+      <a href="index.html" class="text-4xl font-bold hover:text-pink-500">Preeti.</a> <!-- Increased font size -->
+      <div class="space-x-4">
+        <a href="about.html" class="hover:text-pink-500">About</a>
+        <a href="skills.html" class="hover:text-pink-500">Skills</a>
+        <a href="projects.html" class="hover:text-pink-500">Projects</a>
+        <a href="contact.html" class="hover:text-pink-500">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="bg-black text-pink-200 h-screen flex items-center justify-center fade-in">
+    <div class="container mx-auto flex flex-col md:flex-row items-center justify-between">
+
+      <!-- Even Bigger Square Photo on the Side -->
+      <div class="mb-6 md:mb-0 md:w-1/2 flex justify-center">
+        <img src="photo.jpeg" alt="Your Photo" class="w-72 h-72 md:w-96 md:h-96 scale-transition">
+      </div>
+
+      <!-- Text Section -->
+      <div class="text-center md:text-left md:w-1/2 fade-in">
+        <h1 class="text-4xl font-bold mb-4 scale-transition">Hi, I'm Preeti</h1>
+        <p class="text-lg mb-6 scale-transition">Engineering graduate and Data analytics enthusiast</p>
+        <a href="about.html" class="px-6 py-3 bg-pink-500 hover:bg-pink-600 text-lg rounded scale-transition">Explore My Work</a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-black text-center text-pink-200 py-4">
+    <p>&copy; Preeti's Portfolio. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

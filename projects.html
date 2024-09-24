@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects - Engineering Graduate</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="styles/style.css">
+  <style>
+    /* Custom Animation Styles */
+    .fade-in {
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeIn 1s forwards;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .scale-transition {
+      transition: transform 0.3s ease, opacity 0.3s ease;
+    }
+
+    .scale-transition:hover {
+      transform: scale(1.05);
+      opacity: 0.9;
+    }
+  </style>
+</head>
+<body class="bg-black text-pink-200 font-sans">
+
+  <!-- Navbar -->
+  <header class="bg-black text-pink-400 shadow-md">
+    <nav class="container mx-auto p-4 flex justify-between items-center">
+      <a href="index.html" class="text-2xl font-bold hover:text-pink-500">Preeti.</a>
+      <div class="space-x-4">
+        <a href="about.html" class="hover:text-pink-500">About</a>
+        <a href="skills.html" class="hover:text-pink-500">Skills</a>
+        <a href="projects.html" class="hover:text-pink-500">Projects</a>
+        <a href="contact.html" class="hover:text-pink-500">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Projects Section -->
+  <section class="py-16 bg-black text-pink-200 fade-in">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl font-bold mb-6 text-center">Projects</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="bg-black p-6 rounded-lg shadow-md border-2 border-pink-500 scale-transition">
+          <h3 class="text-xl font-bold mb-4">Customer Segmentation Dashboard for Banks: A Comprehensive Guide</h3>
+          <p>Customer segmentation is the process of dividing a customer base into groups with similar characteristics. This helps banks tailor their products and services to meet the specific needs of different customer segments, leading to improved customer satisfaction and increased revenue. A project showcasing data visualization using Tableau.</p>
+        </div>
+        <div class="bg-black p-6 rounded-lg shadow-md border-2 border-pink-500 scale-transition">
+          <h3 class="text-xl font-bold mb-4">Revenue Optimization for Local Vendors</h3>
+          <p>This project aims to develop a data-driven approach to help local vendors optimize their revenue. By analyzing sales data, customer behavior, and market trends, we will identify strategies to increase sales, improve pricing, and enhance customer satisfaction. This will ultimately enable local vendors to thrive and contribute to the local economy.</p>
+        </div>
+        <div class="bg-black p-6 rounded-lg shadow-md border-2 border-pink-500 scale-transition">
+          <h3 class="text-xl font-bold mb-4">CNN Accident Detection System</h3>
+          <p>This project aims to develop a deep learning model using Convolutional Neural Networks (CNNs) to accurately detect accidents from real-world video footage. By analyzing video frames and capturing temporal dependencies, the model can identify patterns indicative of accidents. This technology has the potential to enhance road safety and reduce accidents by enabling early detection and intervention.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-black text-center text-pink-200 py-4">
+    <p>&copy; Preeti's Portfolio. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
